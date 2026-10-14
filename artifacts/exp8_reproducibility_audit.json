@@ -1,0 +1,230 @@
+{
+  "environment": {
+    "python": "3.9.6",
+    "numpy": "2.0.2",
+    "pandas": "2.3.3",
+    "scikit_learn": "1.6.1",
+    "seed": 42,
+    "cache_sha256": "1e28036aef4739384e35874c5e8b02e9d1c3dd76d446832b86297b4243206dea"
+  },
+  "data": {
+    "rows": 27526,
+    "unique_students": 24829,
+    "distinction_rows": 3024,
+    "feature_count": 49
+  },
+  "record_split_student_overlap": {
+    "train_vs_validation": {
+      "shared_students": 575,
+      "validation_records_from_shared_students": 584
+    },
+    "train_vs_test": {
+      "shared_students": 538,
+      "test_records_from_shared_students": 543
+    },
+    "validation_vs_test": {
+      "shared_students": 139,
+      "test_records_from_shared_students": 142
+    }
+  },
+  "published_split_reproduction": {
+    "rows": 4129,
+    "positives": 454,
+    "positive_rate": 0.11,
+    "all_rest_baseline_accuracy": 0.89,
+    "auc": 0.8273,
+    "accuracy": 0.8435,
+    "macro_f1": 0.6638,
+    "precision": 0.3537,
+    "recall": 0.511,
+    "true_positives": 232,
+    "false_positives": 424,
+    "true_negatives": 3251,
+    "false_negatives": 222,
+    "published_auc": 0.8273,
+    "auc_matches_to_4dp": true
+  },
+  "published_split_without_early_assessment_features": {
+    "rows": 4129,
+    "positives": 454,
+    "positive_rate": 0.11,
+    "all_rest_baseline_accuracy": 0.89,
+    "auc": 0.7622,
+    "accuracy": 0.8387,
+    "macro_f1": 0.6269,
+    "precision": 0.3121,
+    "recall": 0.3877,
+    "true_positives": 176,
+    "false_positives": 388,
+    "true_negatives": 3287,
+    "false_negatives": 278
+  },
+  "unseen_student_holdout": {
+    "rows": 5508,
+    "positives": 606,
+    "positive_rate": 0.11,
+    "all_rest_baseline_accuracy": 0.89,
+    "auc": 0.8246,
+    "accuracy": 0.8442,
+    "macro_f1": 0.6569,
+    "precision": 0.3486,
+    "recall": 0.4785,
+    "true_positives": 290,
+    "false_positives": 542,
+    "true_negatives": 4360,
+    "false_negatives": 316,
+    "student_overlap": 0
+  },
+  "unseen_student_holdout_without_early_assessment_features": {
+    "rows": 5508,
+    "positives": 606,
+    "positive_rate": 0.11,
+    "all_rest_baseline_accuracy": 0.89,
+    "auc": 0.7647,
+    "accuracy": 0.8362,
+    "macro_f1": 0.6178,
+    "precision": 0.2995,
+    "recall": 0.3647,
+    "true_positives": 221,
+    "false_positives": 517,
+    "true_negatives": 4385,
+    "false_negatives": 385,
+    "student_overlap": 0
+  },
+  "review_capacity_on_published_test_split": [
+    {
+      "review_share": 0.05,
+      "students_reviewed": 207,
+      "distinctions_found": 105,
+      "precision_in_reviewed_group": 0.5072,
+      "recall_of_all_distinctions": 0.2313
+    },
+    {
+      "review_share": 0.1,
+      "students_reviewed": 413,
+      "distinctions_found": 166,
+      "precision_in_reviewed_group": 0.4019,
+      "recall_of_all_distinctions": 0.3656
+    },
+    {
+      "review_share": 0.15,
+      "students_reviewed": 620,
+      "distinctions_found": 224,
+      "precision_in_reviewed_group": 0.3613,
+      "recall_of_all_distinctions": 0.4934
+    },
+    {
+      "review_share": 0.2,
+      "students_reviewed": 826,
+      "distinctions_found": 260,
+      "precision_in_reviewed_group": 0.3148,
+      "recall_of_all_distinctions": 0.5727
+    }
+  ],
+  "subgroup_diagnostics_at_threshold_0_5": [
+    {
+      "attribute": "gender",
+      "group": "F",
+      "rows": 1887,
+      "positives": 215,
+      "positive_rate": 0.1139,
+      "selection_rate": 0.1537,
+      "precision": 0.3621,
+      "recall": 0.4884,
+      "false_positive_rate": 0.1106,
+      "auc": 0.8209
+    },
+    {
+      "attribute": "gender",
+      "group": "M",
+      "rows": 2242,
+      "positives": 239,
+      "positive_rate": 0.1066,
+      "selection_rate": 0.1632,
+      "precision": 0.347,
+      "recall": 0.5314,
+      "false_positive_rate": 0.1193,
+      "auc": 0.8331
+    },
+    {
+      "attribute": "disability",
+      "group": "N",
+      "rows": 3724,
+      "positives": 422,
+      "positive_rate": 0.1133,
+      "selection_rate": 0.163,
+      "precision": 0.3624,
+      "recall": 0.5213,
+      "false_positive_rate": 0.1172,
+      "auc": 0.8266
+    },
+    {
+      "attribute": "disability",
+      "group": "Y",
+      "rows": 405,
+      "positives": 32,
+      "positive_rate": 0.079,
+      "selection_rate": 0.121,
+      "precision": 0.2449,
+      "recall": 0.375,
+      "false_positive_rate": 0.0992,
+      "auc": 0.8305
+    },
+    {
+      "attribute": "imd_group",
+      "group": "less_deprived_70_100",
+      "rows": 1077,
+      "positives": 160,
+      "positive_rate": 0.1486,
+      "selection_rate": 0.2136,
+      "precision": 0.4,
+      "recall": 0.575,
+      "false_positive_rate": 0.1505,
+      "auc": 0.8326
+    },
+    {
+      "attribute": "imd_group",
+      "group": "middle_30_70",
+      "rows": 1653,
+      "positives": 177,
+      "positive_rate": 0.1071,
+      "selection_rate": 0.17,
+      "precision": 0.3488,
+      "recall": 0.5537,
+      "false_positive_rate": 0.124,
+      "auc": 0.8338
+    },
+    {
+      "attribute": "imd_group",
+      "group": "more_deprived_0_30",
+      "rows": 1242,
+      "positives": 85,
+      "positive_rate": 0.0684,
+      "selection_rate": 0.0942,
+      "precision": 0.2393,
+      "recall": 0.3294,
+      "false_positive_rate": 0.0769,
+      "auc": 0.7882
+    },
+    {
+      "attribute": "imd_group",
+      "group": "unknown",
+      "rows": 157,
+      "positives": 32,
+      "positive_rate": 0.2038,
+      "selection_rate": 0.1783,
+      "precision": 0.5,
+      "recall": 0.4375,
+      "false_positive_rate": 0.112,
+      "auc": 0.803
+    }
+  ],
+  "interpretation_notes": [
+    "Subgroup metrics are diagnostics, not proof of fairness or unfairness.",
+    "The review-capacity table is exploratory because capacities are compared on the test split.",
+    "Early assessment score may not have been available to a teacher by day 30; the ablation bounds the engagement-only claim.",
+    "The grouped holdout tests unseen students but is one deterministic fold, not a final external validation.",
+    "The notebook computes median imputations and one-hot columns before splitting; this is minor preprocessing leakage even though the target is not used.",
+    "AUC measures ranking, not probability calibration; deployment thresholds require calibration on fresh validation data."
+  ]
+}

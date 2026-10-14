@@ -47,6 +47,14 @@ jupyter notebook oulad_summative_notebook.ipynb
 
 The first code cell checks and installs any missing dependencies, so the notebook also runs as-is on Google Colab. All random seeds are fixed to 42. A full cold run, including the one-time OULAD download, takes roughly 12 minutes on CPU.
 
+To independently rerun and stress-test the headline Experiment 8 result without TensorFlow:
+
+```bash
+python audit_exp8.py
+```
+
+This verifies the published AUC from the cached modelling table, checks student overlap across the original record-level split, evaluates an unseen-student holdout, removes potentially unavailable early-assessment fields, and writes capacity and subgroup diagnostics to `artifacts/exp8_reproducibility_audit.json`.
+
 ## Report and demo
 
 - Written report: `report/summative_report.pdf`
